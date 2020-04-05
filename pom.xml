@@ -41,11 +41,17 @@
   
 <distributionManagement>
     <repository>
+	 <enabled>false</enabled>
+        <updatePolicy>always</updatePolicy>
+        <checksumPolicy>warn</checksumPolicy>
         <id>deployment</id>
         <name>internal releases 1</name>
         <url>http://35.175.245.255:8081/nexus/content/repositories/practice/</url>
     </repository>
     <snapshotRepository>
+	<enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+        <checksumPolicy>fail</checksumPolicy>
         <id>deployment</id>
         <name>internal releases</name>
         <url>http://35.175.245.255:8081/nexus/content/repositories/practiceSnap/</url>
