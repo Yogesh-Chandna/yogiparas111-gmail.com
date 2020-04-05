@@ -36,21 +36,30 @@
 				</execution>
 			</executions>
 		</plugin>
+		<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+		</plugin>
 	</plugins>
-	</build>
+   </build>
   
 <distributionManagement>
     <repository>
         <id>deployment</id>
         <name>internal releases 1</name>
         <url>http://35.175.245.255:8081/nexus/content/repositories/practice/</url>
-    </repository>
-	
-    <snapshotRepository>
-        <id>deployment</id>
-        <name>internal releases</name>
-        <url>http://35.175.245.255:8081/nexus/content/repositories/practiceSnap/</url>
-    </snapshotRepository>
+	    		<releases>
+				<enabled>true</enabled>
+			</releases>	
+  	    <snapshotRepository>
+        	<id>deployment</id>
+        	<name>internal releases</name>
+        	<url>http://35.175.245.255:8081/nexus/content/repositories/practiceSnap/</url>
+	    </snapshotRepository>
+       </repository>
 </distributionManagement>
 
 
