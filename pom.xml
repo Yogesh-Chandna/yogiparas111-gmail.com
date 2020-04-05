@@ -44,7 +44,7 @@
     <repository>
         <id>deployment</id>
         <name>internal releases 1</name>
-        <url>http://35.175.245.255:8081/nexus/content/repositories/practice/</url>
+        <url>http://35.175.245.255:8081/nexus/content/repositories/Practice/</url>
     </repository>
     <snapshotRepository>
         <id>deployment</id>
