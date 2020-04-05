@@ -51,20 +51,13 @@
         <id>deployment</id>
         <name>internal releases 1</name>
         <url>http://35.175.245.255:8081/nexus/content/repositories/practice/</url>
-	    		<releases>
-				<enabled>true</enabled>
-			</releases>	
-  	    <snapshotRepository>
-        	<id>deployment</id>
-        	<name>internal releases</name>
-        	<url>http://35.175.245.255:8081/nexus/content/repositories/practiceSnap/</url>
-	    </snapshotRepository>
-       </repository>
+    </repository>
+    <snapshotRepository>
+        <id>deployment</id>
+        <name>internal releases</name>
+        <url>http://35.175.245.255:8081/nexus/content/repositories/practiceSnap/</url>
+    </snapshotRepository>
 </distributionManagement>
-
-
-
-
 
 
 
